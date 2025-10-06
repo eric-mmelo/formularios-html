@@ -3,7 +3,47 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Formularios</title>
+    <link rel="stylesheet" href="css/styles.css" />
   </head>
-  <body></body>
+  <body>
+    <h2>Formularios HTML</h2>
+    <!-- Primeiro formulario -->
+    <!-- Atributos do formulario -->
+    <form action="register.php" method="post">
+      <div>
+        <label>Nome:</label>
+        <input type="text" />
+      </div>
+
+      <!-- Atributo name -->
+      <div>
+        <!-- Atributo label -->
+        <label for="age">Idade:</label>
+        <input type="text" name="age" />
+      </div>
+
+      <!-- Select -->
+      <div>
+        <label for="job">Selecione a sua profissao:</label>
+        <select name="job">
+          <option value="programador">Programador</option>
+          <option value="tester">Tester/QA</option>
+          <option value="devops">DevOps</option>
+        </select>
+      </div>
+
+      <!-- Atributo selected -->
+      <div>
+        <label for="contract">Voce leu os termos do contrato?</label>
+        <select name="contract">
+          <option value="sim">Sim</option>
+          <option value="nao" selected>Não</option>
+        </select>
+      </div>
+
+      <!-- Envio de form -->
+      <input type="submit" value="Enviar" />
+    </form>
+  </body>
 </html>
